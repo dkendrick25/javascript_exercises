@@ -1,10 +1,9 @@
 //print smallest number in array
 var numArray = [12, 23, 14];
-var smallestNum = 0;
+var smallestNum = numArray[0];
 for (var i = 0; i <= numArray.length; i++) {
-  if (numArray[i] < smallestNum && numArray[i] > 0) {
+  if (numArray[i] < smallestNum) {
    smallestNum = numArray[i];
    }
   }
   console.log(smallestNum);
-//stays at 0....need to make smallestNum increment
