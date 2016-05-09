@@ -14,7 +14,7 @@ var counter = length - 1;
 var reversedString = '';
 while (counter >= 0) {
   str.charAt(counter);
-  reversedString p reversedString + letter;
+  reversedString = reversedString + letter;
   counter = counter - 1;
 }
 
