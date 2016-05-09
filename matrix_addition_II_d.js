@@ -6,7 +6,8 @@ var m4 = [
   [9,10],
   [11,12]
 ];
-var row = [];
+var row1 = [];
+var row2 = [];
 var m5 = [];
 for(var i = 0; i < m3.length; i++) {
 
