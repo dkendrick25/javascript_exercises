@@ -216,7 +216,7 @@ console.log(sumAvgPoints(starter(players)));
 //#8
 function moreThanTen(arr) {
   return arr.every(function(player) {
-    return player.avgMinutesPlayed > 10;
+    return player.avgMinutesPlayed >= 10;
   });
 }
 console.log(moreThanTen(players));
@@ -236,7 +236,7 @@ function playerPosition(arr) {
 console.log(playerPosition(players));
 
 function tallyPosition(arr) {
-  return arr.reduce(function(tally, position, currentValue) {
+  return arr.reduce(function(tally, position) {
     if(!tally[position]) {
       tally[position] = 1;
     } else {

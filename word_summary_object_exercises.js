@@ -6,8 +6,8 @@ var wordSummary = {};
 var count = 0;
 
 for (var i = 0; i < words.length; i++) {
-  if (!(words in wordSummary)) {
     var word = words[i];
+  if (!(word in wordSummary)) {
     wordSummary[word] = 0;
   }
    wordSummary[word] = wordSummary[word] + 1;
