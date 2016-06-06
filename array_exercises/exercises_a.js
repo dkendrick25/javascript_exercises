@@ -160,14 +160,14 @@ arr.map(function(element) {
 
 function allPos(arr) {
   return arr.every(function(n) {
-    return n > 0;
+    return n >= 0;
   });
 }
 console.log(allPos([-1,2,3,4]));
 
-function allPosSome(arr) {
+function somePos(arr) {
   return arr.some(function(n) {
-    return n > 0;
+    return n >= 0;
   });
 }
-console.log(allPosSome([-1,2,3,4]));
+console.log(somePos([-1,2,3,4]));
