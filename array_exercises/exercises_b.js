@@ -235,7 +235,17 @@ function playerPosition(arr) {
 }
 console.log(playerPosition(players));
 
-
+function tallyPosition(arr) {
+  return arr.reduce(function(tally, position, currentValue) {
+    if(!tally[position]) {
+      tally[position] = 1;
+    } else {
+      tally[position] += 1;
+    }
+    return tally;
+  }, {});
+}
+console.log(tallyPosition(playerPosition(players)));
 
 // ## Bonus
 //
